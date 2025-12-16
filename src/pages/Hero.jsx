@@ -55,7 +55,7 @@ const Laptop = forwardRef(({ imgRef, readRef, comfortRef }, ref) => {
 
 const Mobile = forwardRef(({ imgRef, readRef, comfortRef }, ref) => {
   return (
-    <section id="section1" ref={ref} className="bg-black min-h-screen bg-linear-[346deg,#fdfdfc_45%,#18191a_45%] p-5">
+    <section id="section1" ref={ref} className="bg-black min-h-screen bg-linear-[346deg,#fdfdfc_45%,#18191a_45%] p-5 ">
       <div
         ref={imgRef}
         className="absolute inset-0 flex items-start justify-center z-20 pointer-events-none mt-16"

@@ -33,6 +33,7 @@ body {
   line-height: 1.5;
   color: white;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -76,4 +77,3 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
-

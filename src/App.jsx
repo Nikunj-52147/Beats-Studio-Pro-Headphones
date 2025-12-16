@@ -59,8 +59,8 @@ function App() {
         },
       });
 
-      gsap.from(imageRef.current, {
-        x: 100,
+      gsap.from(imageRef.current.children, {
+        x: -100,
         opacity: 0,
         duration: 1,
         ease: "power1.out",
