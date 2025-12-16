@@ -47,52 +47,7 @@ function App() {
   
   useLayoutEffect(() => {
   const ctx = gsap.context(() => {
-    ScrollTrigger.matchMedia({
-      "(min-width: 991px)": () => {
-
-
-      const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section2Ref.current,        
-        start: "top bottom",
-        endTrigger: section4Ref.current,    
-        end: "bottom bottom",
-        scrub: true,
-      }
-    });
-
-    
-    tl.to(headphoneRef.current, {
-      
-      y: "30vh",
-      x: "-50vw",
-     
-      scale: 1,           
-      rotate: 45,
-      ease: "power1.inOut",
-      immediateRender: false
-    });
-
-    
-    tl.to(headphoneRef.current, {
-      y: "230vh",
-      x: "-27vw",
-      scale: 1.15,           
-      rotate: 15,
-      ease: "power1.inOut",
-      immediateRender: false
-    });
-
-    tl.to(headphoneRef.current, {
-      y: "355vh",
-      x: "36vw",
-      width: 360,           
-      rotate: 1,
-      ease: "power1.inOut",
-      immediateRender: false
-    });
-
-     gsap.from(textRef.current.children, {
+    gsap.from(textRef.current.children, {
         x: -100,
         opacity: 0,
         duration: 1,
@@ -152,7 +107,7 @@ function App() {
         stagger: 0.1,
         scrollTrigger: {
           trigger: section2Ref.current,
-          start: "top 90%",
+          start: "top 80%",
         },
       });
 
@@ -176,6 +131,52 @@ function App() {
       ease: 'power1.inOut'
     })
 
+    ScrollTrigger.matchMedia({
+      "(min-width: 991px)": () => {
+
+
+      const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section2Ref.current,        
+        start: "top bottom",
+        endTrigger: section4Ref.current,    
+        end: "bottom bottom",
+        scrub: true,
+      }
+    });
+
+    
+    tl.to(headphoneRef.current, {
+      
+      y: "30vh",
+      x: "-50vw",
+     
+      scale: 1,           
+      rotate: 45,
+      ease: "power1.inOut",
+      immediateRender: false
+    });
+
+    
+    tl.to(headphoneRef.current, {
+      y: "230vh",
+      x: "-27vw",
+      scale: 1.15,           
+      rotate: 15,
+      ease: "power1.inOut",
+      immediateRender: false
+    });
+
+    tl.to(headphoneRef.current, {
+      y: "355vh",
+      x: "36vw",
+      width: 360,           
+      rotate: 1,
+      ease: "power1.inOut",
+      immediateRender: false
+    });
+
+     
       }
     });
   });
