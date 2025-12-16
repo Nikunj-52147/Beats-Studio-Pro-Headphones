@@ -9,7 +9,7 @@ const Hero = ({ imgRef, readRef, comfortRef }, ref) => {
 
 const Laptop = forwardRef(({ imgRef, readRef, comfortRef }, ref) => {
   return (
-    <section id="section1" ref={ref} className="bg-black h-screen bg-linear-[346deg,#fdfdfc_40%,#18191a_40%]">
+    <section id="section1" ref={ref} className="bg-black min-h-screen bg-linear-[346deg,#fdfdfc_40%,#18191a_40%]">
       <div
         ref={imgRef}
         className="absolute inset-0 flex items-start justify-center z-20 pointer-events-none mt-7"
@@ -55,10 +55,10 @@ const Laptop = forwardRef(({ imgRef, readRef, comfortRef }, ref) => {
 
 const Mobile = forwardRef(({ imgRef, readRef, comfortRef }, ref) => {
   return (
-    <section id="section1" ref={ref} className="bg-black h-screen bg-linear-[346deg,#fdfdfc_45%,#18191a_45%]">
+    <section id="section1" ref={ref} className="bg-black min-h-screen bg-linear-[346deg,#fdfdfc_45%,#18191a_45%] p-5">
       <div
         ref={imgRef}
-        className="absolute inset-0 flex items-start justify-center z-20 pointer-events-none -mt-7"
+        className="absolute inset-0 flex items-start justify-center z-20 pointer-events-none mt-16"
       >
         <div
           id="headphone"
